@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+  <script>
+    window.onload = clickCounter;
+
+    function clickCounter() {
+      if (typeof (Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount) + 1;
+        } else {
+          localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have visited this page " + localStorage.clickcount + " time(s).";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+
+  </script>
+  <style>
+    body {
+      background-image: url('myintroduction.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    div.a {
+      transform: rotate(0deg)
+    }
+
+    .bottomleft {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      font-size: 18px;
+    }
+    
+    .visible {
+      visibility: visible;
+    }
+    .invisible {
+      visibility: hidden;
+    }
+
+    // Usage as a mixin
+    .element {
+      @include invisible(visible);
+    }
+    .element {
+      @include invisible(hidden);
+    }
+  </style>
+</head>
+
+<body window.onload="clickCounter()">
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h1 class="font-effect-shadow-multiple">M</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index1.html" target="_blank">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index_newidia.html" target="_blank">New Ideas</a></li>
+              <li><a class="dropdown-item" href="D:\php_html\Site1\index_edu.html" target="_blank">Education Details</a></li>
+              <li><a class="dropdown-item" href="index_achievement.html" target="_blank">My Achievements</a></li>
+              
+            </ul>
+          </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index_contactme.html" target="_blank">Contact Me</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <div class="a">
+    <br>
+    <left>
+      <font color="white" face="Comic Sans MS" size="100">Welcome To Megha's<br>Introduction</font>
+    </left>
+  </div>
+  <div class="bottomleft">
+    <font color="white" face = "Comic Sans MS">
+  <div id="result"></div></font>
+  </div>
+  
+
+</body>
+
+</html>

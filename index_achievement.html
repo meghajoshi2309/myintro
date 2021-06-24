@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Achievements</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+
+.box{
+  position: relative;
+  width: 690px;
+  height: 550px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.box span{
+  position: absolute;
+  top: 25;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 120deg)) translateZ(300px);
+  -webkit-box-reflex: below 0px linear-gradient(transparent,transparent,#000);
+}
+.box span img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes animate{
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+
+
+
+/* Style the header */
+.header {
+  background-color: #a0d9f0;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(6, 7, 97);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column1 {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav">
+    <a href="index.html" style="text-decoration:none" target="_blank"><li>Home</li></a>
+    <a href="index1.html" style="text-decoration:none" target="_blank"><li>About Me</li></a>
+      <a href="D:\php_html\Site1\index_edu.html" style="text-decoration:none" target="_blank"><li>Education Details</li></a>
+      <a href="index_newidia.html" style="text-decoration:none" target="_blank"><li>New Ideas</li></a>
+      <a href="index_contactme.html" style="text-decoration:none" target="_blank"><li>Contact Me</li></a>
+</div>
+<div class="header">
+    <h1>Also Visit My Other Projects</h1>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <h3>School Managment System Using PHP</h3>
+    <img src="sms.jpg" alt="sms" width="70%" height="250px"><br><br>
+    <a href="http://meghajoshi.epizy.com/?i=1"><button type="button" class="btn btn-outline-primary">View</button></a>
+  </div>
+  
+  <div class="column">
+    <h3>Online Electronic Shop Group Project</h3>
+    <img src="eshop.jpg" alt="sms" width="70%" height="260px"><br><br>
+    <a href="#"><button type="button" class="btn btn-outline-primary">Coming Soon :)</button></a>
+    
+  </div>
+  
+</div>
+<div class="header">
+  <h1>See My Performace In Coding</h1>
+</div>
+<br>&nbsp;&nbsp;&nbsp;
+
+
+<!--<div class="row">
+  <div class="column1">
+    <a href="https://www.hackerrank.com/meghajoshi556">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="hackerrank.jpg" alt="hackerrank" width="300px" height="300px" ></a>
+  </div>
+  
+  <div class="column1">
+    <a href="https://www.codechef.com/users/mnj_239">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="codechef.jpg" alt="hackerrank" width="300px" height="300px" ></a>
+  </div>
+  
+  <div class="column1">
+    <a href="https://github.com/meghajoshi2309">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="github.jpg" alt="hackerrank" width="300px" height="300px" ></a>
+  </div>
+</div>-->
+
+
+
+
+
+<center><div class="box">
+  <span style="--i:1;"><a href="https://www.hackerrank.com/meghajoshi556"><img src="hackerrank.jpg" alt="hackerrank" ></a></span>
+  <span style="--i:2;"><a href="https://github.com/meghajoshi2309"><img src="github.jpg" alt="hackerrank"  width="3%" height="3%"></a></span>
+  <span style="--i:3;"><a href="https://www.codechef.com/users/mnj_239"><img src="codechef.jpg" alt="hackerrank" ></a></span>
+</div>
+</center>
+
+</body>
+</html>

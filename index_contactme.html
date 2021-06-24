@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Contect Me</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.9/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(contact.jpg);
+        /*background-size: cover;*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        font-family: "comic sans ms";
+      }
+      .contact-title{
+        margin-top: 100px;
+        color: white;
+        text-transform: uppercase;
+        transition: all 45 ease-in-out;
+      }
+      .contact-title h1{
+        font-family: "comic sans ms";
+        font-size: 32px;
+        line-height: 10px;
+      }
+      .contact-title h2{
+        font-size: 16px;
+        
+      }
+      form{
+        margin-top: 50px;
+        transition: all 45 ease-in-out;
+      }
+      .form-control{
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+      input{
+        height: 45px;
+      }
+      form .submit{
+        background: #d41010;
+        border-color: transparent;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        height: 50px;
+        margin-top: 20px;
+        font-family: "comic sans ms";
+
+      }
+      form .submit:hover{
+        background-color: #f44336;
+        cursor: pointer;
+      }
+      ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+        font-family: "comic sans ms";
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+        font-family: "comic sans ms";
+      }
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
+        font-family: "comic sans ms";
+      }
+      .fa-cog {
+        color: white;
+      }
+    </style>
+</head>
+<body>
+    <div class="contact-title">
+        <h1>Get In Touch</h1>
+    </div>
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="C:\xampp\htdocs\php_contect\contact.php">
+          <i class="fa fa-address-book" style="color:#fff;"></i>
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+          <br>
+          <i class="fa fa-envelope-square" style="color:#fff;"></i>
+          <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+          <br>
+          <i class="fa fa-comments" style="color:#fff;"></i>
+          <input name="message" type="text" class="form-control" placeholder="Your Message"  required>
+          <br>
+          <input type="submit" name="submit" class="form-control submit" value="SEND MESSAGE :)">
+        </form>
+      </div>
+      <font color="white">Follow Me On : <a href="https://www.instagram.com/megha_09083/"> <i class="fab fa-instagram-square" style="color:lightpink;height: 40px;width: 40px;"></i></a></font><br>
+      <font color="white">Connect With Me On : <a href="https://www.linkedin.com/in/megha-joshi-b61655208"> <i class="fab fa-invision" style="color:lightblue;height: 40px;width: 40px"></i></a></font>
+
+</body>
+</html> 
+
+
+
